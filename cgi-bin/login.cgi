@@ -6,13 +6,7 @@ use CGI;
 use CGI::Pretty ":standard";
 use CGI::Carp qw(carpout fatalsToBrowser);
 
-my $JSURL;
-if ($^O eq 'solaris') {
-  $JSURL = 'http://www.stud.uni-giessen.de/~su9585/bilder.js';
-}
-else {
-  $JSURL = '../bilder.js';
-}
+my $JSURL = '../bilder.js';
 
 my $cgi = new CGI;
 print $cgi->header();

@@ -12,26 +12,11 @@ use CGI::Pretty qw(:standard);
 use CGI::Carp qw(carpout fatalsToBrowser);
 use File::Copy;
 
-my $STARTSEITE;
-my $BILDERORDNER;
-my $BILDERORDNER700;
-my $JSURL;
-my $BILDERORDNERURL;
-
-if ($^O eq 'solaris') {
-  $STARTSEITE = 'http://www.stud.uni-giessen.de/~su9585/bilder';
-  $BILDERORDNER = "/home/smailu2/su9585/public_html/bilder";
-  $BILDERORDNER700 = "/home/smailu2/su9585/public_html/bilder/bilder700";
-  $JSURL = 'http://www.stud.uni-giessen.de/~su9585/bilder.js';
-  $BILDERORDNERURL = 'http://www.stud.uni-giessen.de/~su9585/bilder';
-}
-else {
-  $STARTSEITE = '../bilder';
-  $BILDERORDNER = "../bilder";
-  $BILDERORDNER700 = "../bilder/bilder700";
-  $JSURL = '../bilder.js';
-  $BILDERORDNERURL = $BILDERORDNER;
-}
+my $STARTSEITE = '../bilder';
+my $BILDERORDNER = "../bilder";
+my $BILDERORDNER700 = "../bilder/bilder700";
+my $JSURL = '../bilder.js';
+my $BILDERORDNERURL = $BILDERORDNER;
 
 my $cgi = new CGI;
 

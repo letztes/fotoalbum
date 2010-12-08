@@ -1,1 +1,5 @@
-A web foto album software with password protection, automatic thumbnail generation and fancy background color switching. Just put your fotos via ftp into the "bilder" folder and the software does everything else.
+A web foto album software with password protection, automatic thumbnail generation and fancy background color switching.
+Just put your fotos via ftp into the "bilder" folder and the software does everything else.
+
+Requires: netpbm (image manipulation software) and perl installed on the server.
+Also you need to set the password in "passphrase.cgi" before you run the scripts the first time.
